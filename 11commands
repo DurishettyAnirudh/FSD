@@ -1,0 +1,26 @@
+mkdir node-mongo-crud
+cd node-mongo-crud
+npm init -y
+npm install express mongoose
+
+
+code structure:
+node-mongo-crud/
+├── node_modules/
+├── package.json
+├── package-lock.json
+└── index.js
+
+mongod
+
+node index.js
+
+Postman commands:
+Action	      Method	  Endpoint	                              Example Body
+Create Item	  POST	    http://localhost:3000/items	            { "name": "Laptop", "description": "High-end", "price": 1200 }
+Get All Items	GET	      http://localhost:3000/items	            —
+Get One Item	GET	      http://localhost:3000/items/:id       	—
+Update Item	  PUT	      http://localhost:3000/items/:id        	{ "name": "Gaming Laptop", "description": "Powerful", "price": 1500 }
+Delete Item	  DELETE	  http://localhost:3000/items/:id	        —
+
+Use Postman   or any REST client to test these endpoints.

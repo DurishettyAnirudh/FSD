@@ -1,0 +1,28 @@
+mkdir node-mongo-app
+cd node-mongo-app
+npm init -y
+npm install express mongoose
+
+
+
+
+code structure:
+node-mongo-app/
+├── node_modules/
+├── index.js
+├── package.json
+└── package-lock.json
+
+
+mongod
+
+GET http://localhost:3000/votes
+
+POST http://localhost:3000/vote
+Content-Type: application/json
+Body:
+{
+  "option": "Alice"
+}
+
+GET http://localhost:3000/results
